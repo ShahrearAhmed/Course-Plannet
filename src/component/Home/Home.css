@@ -1,0 +1,20 @@
+.second-section{
+    display: flex;
+    width: 100%;
+}
+.banner{
+    width: 40%;
+    height: 80%;
+    margin-top: 20px;
+    margin:15px 0px 0px 5px;
+}
+.banner img{
+    width :100%;
+    
+}
+.some-info{
+    width: 60%;
+    display: grid;
+    padding:10px 10px 10px 10px;
+    grid-template-columns: repeat(2,1fr);
+}

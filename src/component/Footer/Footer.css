@@ -1,0 +1,10 @@
+.footer{
+    background-color: cornflowerblue;
+    display: flex;
+}
+.left-div{
+    width: 50%;
+}
+.right-div{
+    width: 50%;
+}
