@@ -5,7 +5,7 @@ const About = () => {
     return (
         <div>
 
-            <h1>About Us</h1>
+            <h1 className="about">About Us</h1>
             <img className="img" src={img} alt="" />
             <p className="description">If you want to begin programming, start here.
                 In this fast-paced and entertaining course,
