@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import img from '../../img/banner.jpg'
 import "./Home.css"
 const Home = () => {
@@ -56,6 +56,7 @@ const Home = () => {
                 </div>
             </div>
         </div>
+
 
 
     );
