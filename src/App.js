@@ -41,9 +41,12 @@ function App() {
           </Route>
           <Route path="*">
             <NotFound></NotFound>
+          </Route >
+          <Route path="/home">
+            <Course></Course>
           </Route>
+
         </Switch>
-        <Course></Course>
         <Footer></Footer>
       </Router>
     </div >
