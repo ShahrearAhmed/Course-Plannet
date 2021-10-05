@@ -42,10 +42,6 @@ function App() {
           <Route path="*">
             <NotFound></NotFound>
           </Route >
-          <Route path="/home">
-            <Course></Course>
-          </Route>
-
         </Switch>
         <Footer></Footer>
       </Router>

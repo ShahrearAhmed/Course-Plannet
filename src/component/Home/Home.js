@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import img from '../../img/banner.jpg'
+import Course from '../Course/Course';
 import "./Home.css"
 const Home = () => {
     return (
@@ -55,6 +56,7 @@ const Home = () => {
                         review the basics of programming.</p>
                 </div>
             </div>
+            <Course></Course>
         </div>
 
 

@@ -28,6 +28,7 @@
 }
 
 .menu-bar nav a{
+    
     text-decoration: none;
     color: black;
     /* margin-right: 20px; */
@@ -39,5 +40,5 @@
 }
 
 .menu-bar nav a:hover{
-    background-color: rgb(160, 216, 253);
+    background-color: white;
 }

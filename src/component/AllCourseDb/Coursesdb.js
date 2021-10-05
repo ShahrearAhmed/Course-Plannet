@@ -158,7 +158,7 @@ const allCourses = [
         key: 'B00464HSHD',
         name: 'Coding Addict',
         author: 'John Smilga',
-        course: 'Ruby Programming',
+        course: 'R Programming',
         subscribers: '121K',
         videos: 555,
         date: ' Dec 9, 2016',
