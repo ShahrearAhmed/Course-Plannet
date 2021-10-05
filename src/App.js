@@ -13,10 +13,11 @@ import NotFound from './component/NotFound/NotFound';
 function App() {
   return (
     <div className="App">
-      <Header>
+      {/* <Header>
 
-      </Header>
+      </Header> */}
       <Router>
+        <Header></Header>
         <Switch>
           <Route exact path="/">
             <Home>
@@ -45,7 +46,7 @@ function App() {
       </Router>
       <Course></Course>
       <Footer></Footer>
-    </div>
+    </div >
   );
 }
 

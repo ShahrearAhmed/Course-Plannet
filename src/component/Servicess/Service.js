@@ -1,27 +1,26 @@
-import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import React from 'react';
-import "./Service.css"
-
-const Service = (props) => {
-    const { name, image, author, subscribers, videos, date, price }
-        = props.courseProduct;
-    const element = <FontAwesomeIcon icon={faShoppingCart} />
+import React, { useEffect, useState } from 'react';
+import Product from '../Product/Product';
+const Service = () => {
+    const [coursesProduct, setCoursesProduct] = useState([]);
+    useEffect(() => {
+        fetch('./courses.JSON')
+            .then(response => response.json())
+            .then(data => setCoursesProduct(data));
+    }, [])
     return (
-        <div>
-            <div className="card-design">
-                <div className="product-name">
-                    <img className="img" src={image} alt="" />
-                    <h4>Name: {name} </h4>
-                    <p>Author: {author}</p>
-                    <p>Subscribers: {subscribers}</p>
-                    <p>Videos: {videos}</p>
-                    <p>Join Date: {date}</p>
-                    <p>Monthly Income:${price}</p>
-                    <button
-                        // onClick={() => props.handleAddToCart(props.channleProduct)}
-                        className="btn-purchase">{element} Add To Cart</button>
-                </div>
+
+        <div className="courses-container">
+            {/* <h1>Our Courses</h1> */}
+            {/* <br /> */}
+            <div className="course-container">
+                {
+                    coursesProduct.map(courseProduct =>
+                        <Product key={courseProduct.key}
+                            courseProduct={courseProduct}
+                        // handleAddToCart={handleAddToCart
+                        // channelNameAddToCart={channelNameAddToCart}
+                        ></Product>)
+                }
             </div>
         </div>
     );
