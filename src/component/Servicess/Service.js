@@ -10,19 +10,21 @@ const Service = () => {
     return (
 
         <div className="courses-container">
-            {/* <h1>Our Courses</h1> */}
-            {/* <br /> */}
-            <div className="course-container">
-                {
-                    coursesProduct.map(courseProduct =>
-                        <Product key={courseProduct.key}
-                            courseProduct={courseProduct}
-                        // handleAddToCart={handleAddToCart
-                        // channelNameAddToCart={channelNameAddToCart}
-                        ></Product>)
-                }
+            <div className="title">
+                <h1>Courses We Offer</h1>
+                <div className="course-container">
+                    {
+                        coursesProduct.map(courseProduct =>
+                            <Product key={courseProduct.key}
+                                courseProduct={courseProduct}
+                            // handleAddToCart={handleAddToCart
+                            // channelNameAddToCart={channelNameAddToCart}
+                            ></Product>)
+                    }
+                </div>
             </div>
         </div>
+
     );
 };
 

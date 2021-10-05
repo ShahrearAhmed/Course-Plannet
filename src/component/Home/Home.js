@@ -3,8 +3,10 @@ import img from '../../img/banner.jpg'
 import "./Home.css"
 const Home = () => {
     return (
-        <div className="second-section">
-            <div class="banner">
+
+        <div className="title">
+            <h1>Why us</h1>
+            <div className="banner">
                 <img src={img} alt="" />
             </div>
             <div className="some-info">
@@ -53,8 +55,9 @@ const Home = () => {
                         review the basics of programming.</p>
                 </div>
             </div>
-
         </div>
+
+
     );
 };
 

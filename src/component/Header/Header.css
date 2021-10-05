@@ -1,38 +1,43 @@
 .header{
-    width: 100%;
-    background-color: aquamarine;
+    width: 90%;
+    margin-top: 20px;
+    margin:15px 0px 0px 82px;
+    height: 100px;
+    background-color: rgba(35, 37, 37, 0.096);
     display: flex;
     
 }
-.course-name{
+/* .course-name{
     width: 25%;
     margin:0px 0px 0px 10px;
 
-}
+} */
 /* .logo{
 
     height: 50px;
     width: 25%;
 
-}
-.logo img{
-    width: 25%;
-   
 } */
+.header img{
+    width: 200px;
+    margin:5px;  
+}
 .menu-bar {
-    width: 75%;
-    justify-content: space-between;
+    /* width: 75%; */
+    /* justify-content: space-between; */
 }
 
 .menu-bar nav a{
     text-decoration: none;
     color: black;
-    margin-right: 15px;
-    padding: 10px;
-    margin:10px 0px 0px 0px;
-    font-size: 15px;
+    /* margin-right: 20px; */
+    padding: 80px;
+    margin-top: 20px;
+    font-size: 20px;
+    text-align: center;
+    justify-content: center;
 }
 
 .menu-bar nav a:hover{
-    background-color: violet;
+    background-color: rgb(160, 216, 253);
 }

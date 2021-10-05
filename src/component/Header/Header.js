@@ -5,14 +5,14 @@ import "./Header.css"
 const Header = () => {
     return (
         <div className="header">
-            <div className="course-name">
+            {/* <div className="course-name">
                 <h5>Programming Course</h5>
-            </div>
-            {/* <div className="logo">
-                <img src={logo} alt="" />
             </div> */}
+            {/* <div className="logo"> */}
+            <img src={logo} alt="" />
+            {/* </div> */}
             <div className="menu-bar">
-                <nav>
+                <nav className="nav">
                     <NavLink to="/home">Home</NavLink>
                     <NavLink to="/about">About</NavLink>
                     <NavLink to="/services">Servicess</NavLink>

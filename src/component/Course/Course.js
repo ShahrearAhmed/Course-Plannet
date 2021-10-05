@@ -10,18 +10,20 @@ const Course = () => {
     }, [])
     return (
 
-        <div className="courses-container">
-            {/* <h1>Our Courses</h1> */}
-            {/* <br /> */}
-            <div className="course-container">
-                {
-                    coursesProduct.map(courseProduct =>
-                        <Product key={courseProduct.key}
-                            courseProduct={courseProduct}
-                        // handleAddToCart={handleAddToCart
-                        // channelNameAddToCart={channelNameAddToCart}
-                        ></Product>)
-                }
+<div className="courses-container">
+            <div className="title">
+                <h1>Trending Courses</h1>
+
+                <div className="course-container">
+                    {
+                        coursesProduct.map(courseProduct =>
+                            <Product key={courseProduct.key}
+                                courseProduct={courseProduct}
+                            // handleAddToCart={handleAddToCart
+                            // channelNameAddToCart={channelNameAddToCart}
+                            ></Product>)
+                    }
+                </div>
             </div>
         </div>
     );

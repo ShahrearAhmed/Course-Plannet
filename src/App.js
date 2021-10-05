@@ -43,9 +43,9 @@ function App() {
             <NotFound></NotFound>
           </Route>
         </Switch>
+        <Course></Course>
+        <Footer></Footer>
       </Router>
-      <Course></Course>
-      <Footer></Footer>
     </div >
   );
 }
